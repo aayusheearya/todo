@@ -1,0 +1,101 @@
+body{
+    background: linear-gradient(45deg, #159eed, #dbe1e4);
+    height: 100vh;
+    color: rgb(1, 39, 62);
+    text-align: center;
+}
+
+h1{
+    position: relative;
+    animation: fadeInZoom 3s ease-in-out forwards;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 20px;
+    
+}
+
+@keyframes fadeInZoom {
+    0% {
+      opacity: 0;
+      transform: scale(0.8); /* Small and invisible */
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1); /* Full size and visible */
+    }
+}
+.task{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.task input{
+    width: 400px;
+}
+
+.task input{
+    padding: 10px;
+    margin: 10px;
+}
+
+.lists{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.order{
+    display: flex;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: disc;
+    color: rgb(8, 2, 50);
+    font-size: 30px;
+    border: 1px solid black;
+    background : linear-gradient(45deg, #abd5f8, #d5e0eb);
+    margin: 20px;
+    width: 520px;
+    height: 60px;
+    padding: 20px;
+    list-style: none;
+    justify-content: space-between;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .task input {
+        width: 90%; /* Allow the input to be more responsive */
+        max-width: 100%; /* Ensure it doesn’t exceed the container */
+    }
+
+    .order {
+        font-size: 1.2rem; /* Smaller font size */
+        padding: 15px; /* Adjust padding */
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem; /* Further adjust font size */
+    }
+
+    .task input {
+        padding: 8px; /* Smaller padding */
+        font-size: 1rem; /* Adjust font size for input */
+    }
+
+    .order {
+        font-size: 1rem; /* Further adjust font size */
+    }
+}
